@@ -13,7 +13,14 @@
 	
 
 <div class="demo-content">
-[PLACEHOLDER]
+
+<div class='item'>
+<h3>Load Blue Style Sheet</h3>
+<div class='intro'></div>
+<code>&lt;dnn:DnnCssInclude runat=&quot;server&quot; FilePath=&quot;css/blue.css&quot; PathNameAlias=&quot;SkinPath&quot; /&gt;</code>
+<div class='example'><dnn:DnnCssInclude runat="server" FilePath="css/blue.css" PathNameAlias="SkinPath" /></div>
+</div>
+
 </div>
 
 	

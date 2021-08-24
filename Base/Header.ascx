@@ -75,7 +75,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <div class="wrap-main <%=IsLocalSite%>" id="skin">
-	<div class="demo">
+	<div class="demo-wrapper">
 		<div class="menu-header clear-after">
 			<a href="http://<%=PortalSettings.PortalAlias.HttpAlias%>">
 				<img src="<%=SkinPath%>/Base/Img/FFLogoWhite.png" />
@@ -87,7 +87,9 @@
 				<dnn:LANGUAGE runat="server" id="dnnLANGUAGE" showMenu="False" showLinks="True" />
 			</div>
 		</div>
+		
 		<dnn:MENU MenuStyle="Base/MenuDefinition" runat="server" ExcludeNodes="Admin,Host"></dnn:MENU>
+		
 		<div class="bottom-links">
 		<span class="text"><a class="c24-12" href="http://www.40fingers.net/products" target="_Blank"><i class="material-icons">public</i><span> 40FINGERS</span></a>  <a class="c24-12" href="https://www.40fingers.net/Products/DNN-Demo-Skins" target="_blank"><i class="material-icons">file_download</i><span> Download</span></a></span>
 		<%If Request.IsAuthenticated%>

@@ -13,7 +13,8 @@
 	
 
 <div class="demo-content">
-[PLACEHOLDER]
+
+
 </div>
 
 	

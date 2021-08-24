@@ -4,17 +4,15 @@
 
 <!-- #include file="Base/Header.ascx" -->
 
-	<div class="SideMenu">
-		<dnn:MENU MenuStyle="Menus/00.00-DDR-XSLT-UL-Classes" runat="server" NodeSelector="0,0,0"></dnn:MENU>
-	</div>
 		
 	<!-- 40FINGERS DNN Demo Skin 
 		Created by Timo Breumelhof, www.40fingers.net
 		Everything that's used for this Demo is below this line.-->
 		
 	<!-- START -->
+	
 
-<div class="demo">
+<div class="demo-content">
 <%@ Register TagPrefix="dnn" TagName="Breadcrumb" Src="~/Admin/Skins/breadcrumb.ascx" %>
 <dnn:Breadcrumb runat="server" id="dnnBreadcrumb" /><div class='item'>
 <h3>Default</h3>
