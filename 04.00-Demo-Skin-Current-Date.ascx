@@ -10,11 +10,18 @@
 		Everything that's used for this Demo is below this line.-->
 		
 	<!-- START -->
-	
+<div class="cols">
+<div class="side-pane c24-12" id="SidePane" runat="server" />
+<div class="demo-content c24-12">
+<h3>Skin Object Examples</h3>
+<%@ Register TagPrefix="dnn" TagName="CURRENTDATE" Src="~/Admin/Skins/CurrentDate.ascx" %><div class='item'>
+<h3>Default</h3>
+<div class='intro'></div>
+<code>&lt;dnn:CurrentDate runat=&quot;server&quot; id=&quot;dnnCurrentDate&quot; /&gt;</code>
+<div class='example'><dnn:CurrentDate runat="server" id="SKO0" /></div>
+</div>
 
-<div class="demo-content">
-
-
+</div>
 </div>
 
 	

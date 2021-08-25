@@ -10,10 +10,12 @@
 		Everything that's used for this Demo is below this line.-->
 		
 	<!-- START -->
-	
-
-<div class="demo-content">
+<div class="cols">
+<div class="side-pane c24-12" id="SidePane" runat="server" />
+<div class="demo-content c24-12">
+<h3>Skin Object Examples</h3>
 [PLACEHOLDER]
+</div>
 </div>
 
 	
