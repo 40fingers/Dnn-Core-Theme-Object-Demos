@@ -14,7 +14,13 @@
 <div class="side-pane c24-12" id="SidePane" runat="server" />
 <div class="demo-content c24-12">
 <h3>Skin Object Examples</h3>
-[PLACEHOLDER]
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %><div class='item'>
+<h3>Load Blue Style Sheet</h3>
+<div class='intro'></div>
+<code>&lt;dnn:DnnCssInclude runat=&quot;server&quot; FilePath=&quot;css/blue.css&quot; PathNameAlias=&quot;SkinPath&quot; /&gt;</code>
+<div class='example'><dnn:DnnCssInclude runat="server" FilePath="css/blue.css" PathNameAlias="SkinPath" /></div>
+</div>
+
 </div>
 </div>
 
