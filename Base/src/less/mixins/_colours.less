@@ -1,0 +1,224 @@
+@colcount: 6;
+
+// Default saturation and lightness of base colours
+@ColDefaultSat: 50;
+@ColDefaultLight: 50;
+
+// Steps to make colour lighter
+@ColLighter1: 20%;
+@ColLighter2: 37%;
+@ColLighter3: 45%;
+
+// Steps to make colour darker
+@ColDarker1: 20%;
+@ColDarker2: 29%;
+@ColDarker3: 35%;
+
+// Saturaton for more Sarurated
+@ColSat: 25%;
+
+// Saturaton for more Desarurated
+@ColDesat: 25%;
+
+/* By default the color variations will be based of an average lightness of the color
+If you like that, change the color for Col1, if you don't make sure you change both Col1 and Col1Base.
+*/
+
+/* Color 1 */
+@Col1: #80bf40;
+@Col1H: hue(@Col1);
+
+@Col1Base: hsl(@Col1H, unit(@ColDefaultSat, %), unit(@ColDefaultLight, %)); // Calculate base color with medium lightness
+
+@Col1SuperLight: lighten(@Col1Base, @ColLighter3);
+@Col1ExtraLight: lighten(@Col1Base, @ColLighter2);
+@Col1Light: lighten(@Col1Base, @ColLighter1);
+@Col1Medium: @Col1Base;
+@Col1Dark: darken(@Col1Base, @ColDarker1);
+@Col1ExtraDark: darken(@Col1Base, @ColDarker2);
+@Col1SuperDark: darken(@Col1Base, @ColDarker3);
+
+@Col1SatSuperLight: saturate(@Col1SuperLight, @ColSat);
+@Col1SatExtraLight: saturate(@Col1ExtraLight, @ColSat);
+@Col1SatLight: saturate(@Col1Light, @ColSat);
+@Col1SatMedium: saturate(@Col1Base, @ColSat);
+@Col1SatDark: saturate(@Col1Dark, @ColSat);
+@Col1SatExtraDark: saturate(@Col1ExtraDark, @ColSat);
+@Col1SatSuperDark: saturate(@Col1SuperDark, @ColSat);
+
+@Col1DesatSuperLight: Desaturate(@Col1SuperLight, @ColSat);
+@Col1DesatExtraLight: Desaturate(@Col1ExtraLight, @ColSat);
+@Col1DesatLight: Desaturate(@Col1Light, @ColSat);
+@Col1DesatMedium: Desaturate(@Col1Base, @ColSat);
+@Col1DesatDark: Desaturate(@Col1Dark, @ColSat);
+@Col1DesatExtraDark: Desaturate(@Col1ExtraDark, @ColSat);
+@Col1DesatSuperDark: Desaturate(@Col1SuperDark, @ColSat);
+
+
+/* Color 2 */
+@Col2: #30ac63;
+@Col2H: hue(@Col2);
+
+@Col2Base: hsl(@Col2H, unit(@ColDefaultSat, %), unit(@ColDefaultLight, %)); // Calculate base color with medium lightness
+
+@Col2SuperLight: lighten(@Col2Base, @ColLighter3);
+@Col2ExtraLight: lighten(@Col2Base, @ColLighter2);
+@Col2Light: lighten(@Col2Base, @ColLighter1);
+@Col2Medium: @Col2Base;
+@Col2Dark: darken(@Col2Base, @ColDarker1);
+@Col2ExtraDark: darken(@Col2Base, @ColDarker2);
+@Col2SuperDark: darken(@Col2Base, @ColDarker3);
+
+@Col2SatSuperLight: saturate(@Col2SuperLight, @ColSat);
+@Col2SatExtraLight: saturate(@Col2ExtraLight, @ColSat);
+@Col2SatLight: saturate(@Col2Light, @ColSat);
+@Col2SatMedium: saturate(@Col2Base, @ColSat);
+@Col2SatDark: saturate(@Col2Dark, @ColSat);
+@Col2SatExtraDark: saturate(@Col2ExtraDark, @ColSat);
+@Col2SatSuperDark: saturate(@Col2SuperDark, @ColSat);
+
+@Col2DesatSuperLight: Desaturate(@Col2SuperLight, @ColSat);
+@Col2DesatExtraLight: Desaturate(@Col2ExtraLight, @ColSat);
+@Col2DesatLight: Desaturate(@Col2Light, @ColSat);
+@Col2DesatMedium: Desaturate(@Col2Base, @ColSat);
+@Col2DesatDark: Desaturate(@Col2Dark, @ColSat);
+@Col2DesatExtraDark: Desaturate(@Col2ExtraDark, @ColSat);
+@Col2DesatSuperDark: Desaturate(@Col2SuperDark, @ColSat);
+
+
+/* Color 3 */
+@Col3: #00957a;
+@Col3H: hue(@Col3);
+
+@Col3Base: hsl(@Col3H, unit(@ColDefaultSat, %), unit(@ColDefaultLight, %)); // Calculate base color with medium lightness
+
+@Col3SuperLight: lighten(@Col3Base, @ColLighter3);
+@Col3ExtraLight: lighten(@Col3Base, @ColLighter2);
+@Col3Light: lighten(@Col3Base, @ColLighter1);
+@Col3Medium: @Col3Base;
+@Col3Dark: darken(@Col3Base, @ColDarker1);
+@Col3ExtraDark: darken(@Col3Base, @ColDarker2);
+@Col3SuperDark: darken(@Col3Base, @ColDarker3);
+
+@Col3SatSuperLight: saturate(@Col3SuperLight, @ColSat);
+@Col3SatExtraLight: saturate(@Col3ExtraLight, @ColSat);
+@Col3SatLight: saturate(@Col3Light, @ColSat);
+@Col3SatMedium: saturate(@Col3Base, @ColSat);
+@Col3SatDark: saturate(@Col3Dark, @ColSat);
+@Col3SatExtraDark: saturate(@Col3ExtraDark, @ColSat);
+@Col3SatSuperDark: saturate(@Col3SuperDark, @ColSat);
+
+@Col3DesatSuperLight: Desaturate(@Col3SuperLight, @ColSat);
+@Col3DesatExtraLight: Desaturate(@Col3ExtraLight, @ColSat);
+@Col3DesatLight: Desaturate(@Col3Light, @ColSat);
+@Col3DesatMedium: Desaturate(@Col3Base, @ColSat);
+@Col3DesatDark: Desaturate(@Col3Dark, @ColSat);
+@Col3DesatExtraDark: Desaturate(@Col3ExtraDark, @ColSat);
+@Col3DesatSuperDark: Desaturate(@Col3SuperDark, @ColSat);
+
+
+
+
+/* Color 4 */
+@Col4: #007c80;
+@Col4H: hue(@Col4);
+
+@Col4Base: hsl(@Col4H, unit(@ColDefaultSat, %), unit(@ColDefaultLight, %)); // Calculate base color with medium lightness
+
+@Col4SuperLight: lighten(@Col4Base, @ColLighter3);
+@Col4ExtraLight: lighten(@Col4Base, @ColLighter2);
+@Col4Light: lighten(@Col4Base, @ColLighter1);
+@Col4Medium: @Col4Base;
+@Col4Dark: darken(@Col4Base, @ColDarker1);
+@Col4ExtraDark: darken(@Col4Base, @ColDarker2);
+@Col4SuperDark: darken(@Col4Base, @ColDarker3);
+
+@Col4SatSuperLight: saturate(@Col4SuperLight, @ColSat);
+@Col4SatExtraLight: saturate(@Col4ExtraLight, @ColSat);
+@Col4SatLight: saturate(@Col4Light, @ColSat);
+@Col4SatMedium: saturate(@Col4Base, @ColSat);
+@Col4SatDark: saturate(@Col4Dark, @ColSat);
+@Col4SatExtraDark: saturate(@Col4ExtraDark, @ColSat);
+@Col4SatSuperDark: saturate(@Col4SuperDark, @ColSat);
+
+@Col4DesatSuperLight: Desaturate(@Col4SuperLight, @ColSat);
+@Col4DesatExtraLight: Desaturate(@Col4ExtraLight, @ColSat);
+@Col4DesatLight: Desaturate(@Col4Light, @ColSat);
+@Col4DesatMedium: Desaturate(@Col4Base, @ColSat);
+@Col4DesatDark: Desaturate(@Col4Dark, @ColSat);
+@Col4DesatExtraDark: Desaturate(@Col4ExtraDark, @ColSat);
+@Col4DesatSuperDark: Desaturate(@Col4SuperDark, @ColSat);
+
+
+/* Color 5 */
+@Col5: #006174;
+@Col5H: hue(@Col5);
+
+@Col5Base: hsl(@Col5H, unit(@ColDefaultSat, %), unit(@ColDefaultLight, %)); // Calculate base color with medium lightness
+
+@Col5SuperLight: lighten(@Col5Base, @ColLighter3);
+@Col5ExtraLight: lighten(@Col5Base, @ColLighter2);
+@Col5Light: lighten(@Col5Base, @ColLighter1);
+@Col5Medium: @Col5Base;
+@Col5Dark: darken(@Col5Base, @ColDarker1);
+@Col5ExtraDark: darken(@Col5Base, @ColDarker2);
+@Col5SuperDark: darken(@Col5Base, @ColDarker3);
+
+@Col5SatSuperLight: saturate(@Col5SuperLight, @ColSat);
+@Col5SatExtraLight: saturate(@Col5ExtraLight, @ColSat);
+@Col5SatLight: saturate(@Col5Light, @ColSat);
+@Col5SatMedium: saturate(@Col5Base, @ColSat);
+@Col5SatDark: saturate(@Col5Dark, @ColSat);
+@Col5SatExtraDark: saturate(@Col5ExtraDark, @ColSat);
+@Col5SatSuperDark: saturate(@Col5SuperDark, @ColSat);
+
+@Col5DesatSuperLight: Desaturate(@Col5SuperLight, @ColSat);
+@Col5DesatExtraLight: Desaturate(@Col5ExtraLight, @ColSat);
+@Col5DesatLight: Desaturate(@Col5Light, @ColSat);
+@Col5DesatMedium: Desaturate(@Col5Base, @ColSat);
+@Col5DesatDark: Desaturate(@Col5Dark, @ColSat);
+@Col5DesatExtraDark: Desaturate(@Col5ExtraDark, @ColSat);
+@Col5DesatSuperDark: Desaturate(@Col5SuperDark, @ColSat);
+
+
+
+/* Color 6 */
+@Col6: #2f4858;
+@Col6H: hue(@Col6);
+
+@Col6Base: hsl(@Col6H, unit(@ColDefaultSat, %), unit(@ColDefaultLight, %)); // Calculate base color with medium lightness
+
+@Col6SuperLight: lighten(@Col6Base, @ColLighter3);
+@Col6ExtraLight: lighten(@Col6Base, @ColLighter2);
+@Col6Light: lighten(@Col6Base, @ColLighter1);
+@Col6Medium: @Col6Base;
+@Col6Dark: darken(@Col6Base, @ColDarker1);
+@Col6ExtraDark: darken(@Col6Base, @ColDarker2);
+@Col6SuperDark: darken(@Col6Base, @ColDarker3);
+
+@Col6SatSuperLight: saturate(@Col6SuperLight, @ColSat);
+@Col6SatExtraLight: saturate(@Col6ExtraLight, @ColSat);
+@Col6SatLight: saturate(@Col6Light, @ColSat);
+@Col6SatMedium: saturate(@Col6Base, @ColSat);
+@Col6SatDark: saturate(@Col6Dark, @ColSat);
+@Col6SatExtraDark: saturate(@Col6ExtraDark, @ColSat);
+@Col6SatSuperDark: saturate(@Col6SuperDark, @ColSat);
+
+@Col6DesatSuperLight: Desaturate(@Col6SuperLight, @ColSat);
+@Col6DesatExtraLight: Desaturate(@Col6ExtraLight, @ColSat);
+@Col6DesatLight: Desaturate(@Col6Light, @ColSat);
+@Col6DesatMedium: Desaturate(@Col6Base, @ColSat);
+@Col6DesatDark: Desaturate(@Col6Dark, @ColSat);
+@Col6DesatExtraDark: Desaturate(@Col6ExtraDark, @ColSat);
+@Col6DesatSuperDark: Desaturate(@Col6SuperDark, @ColSat);
+
+
+/* Grey */
+@Grey: #808080;
+@GreySuperLight: lighten(@Grey, @ColLighter3);
+@GreyExtraLight: lighten(@Grey, @ColLighter2);
+@GreyLight: lighten(@Grey, @ColLighter1);
+@GreyMedium: @Grey;
+@GreyDark: darken(@Grey, @ColDarker1);
+@GreyExtraDark: darken(@Grey, @ColDarker2);
+@GreySuperDark: darken(@Grey, @ColDarker3);

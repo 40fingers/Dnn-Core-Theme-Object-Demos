@@ -1,0 +1,120 @@
+/* DNN Input, Buttons & Tabs */
+
+.dnnFormItem input[type="text"], .dnnFormItem select, .dnnFormItem textarea, .dnnFormItem input[type="email"], .dnnFormItem input[type="search"], .dnnFormItem input[type="password"] {
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #c9c9c9;
+    border-radius: @DnnBorderRadius;
+    box-shadow: none;
+    margin-bottom: 1em;
+    padding: 5px 8px;
+	font-size:inherit;
+}
+
+.dnnFormItem input[type="text"]:active, .dnnFormItem input[type="text"]:focus, .dnnFormItem input[type="password"]:focus, .dnnFormItem input[type="password"]:active, .dnnFormItem input[type="email"]:active, .dnnFormItem input[type="email"]:focus, .dnnFormItem select:active, .dnnFormItem select:focus, .dnnFormItem textarea:active, .dnnFormItem textarea:focus, .dnnFormItem input[type="search"]:active, .dnnFormItem input[type="search"]:focus {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid @Col1Medium;
+  box-shadow: 0 0 3px 0 @Col1Medium;
+  color: #333;
+}
+
+.dnnPrimaryAction, .dnnFormItem input[type="submit"], a.dnnPrimaryAction 
+{
+	background:@btnPrimaryBg; 
+	display:inline-block; 
+	padding: 8px 14px; 
+	border-radius:@DnnBorderRadius; 
+
+	text-shadow: @dnnTextShadow; 
+	text-decoration:none; 
+	box-shadow:none; 
+	border:none;
+
+	&:link, &:visited{
+		color:@btnPrimaryCol; 
+	}
+}
+
+.dnnPrimaryAction:hover, .dnnFormItem input[type="submit"]:hover, a.dnnPrimaryAction:hover {
+background: @btnPrimaryHoverBg; border-color: @Col1Medium; color: @btnPrimaryHoverCol;
+}
+
+.dnnFormItem button, 
+.dnnFormItem input[type="button"], 
+.dnnFormItem input[type="reset"], 
+.dnnSecondaryAction, 
+.dnnTertiaryAction,
+a.dnnSecondaryAction, 
+a.dnnTertiaryAction, 
+ul.dnnAdminTabNav li a, 
+.dnnLogin .LoginTabGroup span 
+{
+	background:@btnSecondaryBg; 
+	display:inline-block; 
+	padding: 8px 14px; 
+	border-radius:@DnnBorderRadius; 
+	color: @btnSecondaryCol; 
+	text-decoration:none; 
+	text-shadow: @dnnTextShadow; 
+	box-shadow:none; 
+	border:none; 
+	font-weight: normal;
+}
+
+
+.dnnFormItem button:hover, 
+.dnnFormItem input[type="button"]:hover, 
+.dnnFormItem input[type="reset"]:hover, 
+.dnnSecondaryAction:hover, 
+a.dnnSecondaryAction:hover, 
+.dnnTertiaryAction:hover, 
+a.dnnTertiaryAction:hover, 
+ul.dnnAdminTabNav li a:hover, 
+.dnnLogin .LoginTabGroup span:hover {
+background: @btnSecondaryHoverBg; color: @btnSecondaryHoverCol;
+}
+
+
+
+ul.dnnAdminTabNav {height:40px;}
+
+ul.dnnAdminTabNav li.ui-tabs-active a{
+background-color:@Col1Medium; text-shadow: @dnnTextShadow; padding: 10px 14px 9px;
+}
+
+h2.dnnFormSectionHead {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid @Col1Medium;
+    font-size: 1.7em;
+    line-height: 1.5em;
+    letter-spacing: normal;
+}
+
+
+.dnnLogHeader{background:@Col1Medium; color:#fff;}
+
+.dnnFormMessage{border-radius:@DnnBorderRadius; border:none; max-width:100%;}
+
+/* Tabs */
+.dnnForm .ui-corner-all{border-radius:@DnnBorderRadius;}
+ul.dnnAdminTabNav{border-bottom:solid 2px @Col1Medium; margin-top:0.5em;}
+ul.dnnAdminTabNav li.ui-tabs-active a{margin-top:0;}
+
+
+.LabelEditTextClass, .fffas-select{color:@Col1ExtraDark;}
+
+// add an offset to all items that need it for the PB< but not when the Mobilemenu is open.
+// In that case the header is positioned relatively
+.personabar-visible:not(.mobile-menu-open) .pb-offset{
+	margin-left: @CpOffsetDnn9;
+}
+
+/* Disabled edit button in CkEditor */
+.ehActions a.aspNetDisabled{
+	border-radius: @DnnBorderRadius;
+	background:#eee;
+	color:#aaa;
+	border:none;
+	padding: 8px 14px; 
+}
+
