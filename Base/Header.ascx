@@ -72,15 +72,15 @@
 </script>
 
 <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
-<div class="wrap-main <%=IsLocalSite%>" id="skin">
-	<div class="demo-wrapper">
-		<div class="menu-header clear-after">
-			<a href="http://<%=PortalSettings.PortalAlias.HttpAlias%>">
+<main class="wrap-main menu-open <%=IsLocalSite%>" id="skin">
+	<aside class="side-wrapper">
+		<div class="menu-header">
+			<a class="main-logo" href="https://<%=PortalSettings.PortalAlias.HttpAlias%>">
 				<img src="<%=SkinPath%>/Base/Img/FFLogoWhite.png" />
 			</a>
-			<a class="icon40 float-right" id="togglemenu" onclick="toggleMenu()">
+			<a class="togglemenu icon40" id="togglemenu" onclick="toggleMenu()" title="Toggle Sidebar">
 				<i class="material-icons">menu</i>
 			</a>
 			<div class="lang-wrap float-right clear-after">
@@ -88,26 +88,27 @@
 			</div>
 		</div>
 		
+		<!-- Side Menu -->
 		<dnn:MENU MenuStyle="Base/MenuDefinition" runat="server" ExcludeNodes="Admin,Host"></dnn:MENU>
 		
+		
+		
 		<div class="bottom-links">
-		<a href="http://www.40fingers.net/products" target="_Blank"><i class="material-icons">public</i><span> 40FINGERS</span></a><a class="flex-grow-1" href="https://www.40fingers.net/Products/DNN-Demo-Skins" target="_blank"><i class="material-icons">file_download</i><span> Download</span></a>
+		<a href="<%=sCompanyUrl%>" target="_blank"><i class="material-icons">public</i><span>40FINGERS</span></a>
+		<a class="flex-grow-1" href="<%=sDownloadUrl%>" target="_blank"><i class="material-icons">file_download</i><span>Download</span></a>
 		<%If Request.IsAuthenticated%>
-		<a class="icon40" href="?ctl=logoff"><i class="material-icons">lock_open</i></a>
+		<a class="icon40" href="/logoff"><i class="material-icons">lock_open</i></a>
 		<%Else%>
-		<a class="icon40" href="?ctl=login"><i class="material-icons">lock</i></a>
+		<a class="icon40" href="/login"><i class="material-icons">lock</i></a>
 		<%End If%>
 		</div>
-	</div>
+	</aside>
 	<div class="content-main">
 	<header class="main clear-after">
-		<div class="mid c-pad-h40 c-pad-v20">
+		<div class="pad-h3 pad-v3">
 			<h1 class="title-main"><a href="http://www.40fingers.net/products" target="_Blank">40FINGERS Demo Skin</a></h1>
 			<h2 class="description-main">Page skin: <%=SkinName%></h2>
 		</div>
-		<div class="right">
-		<a class="icon40" href="https://demoskins.codeplex.com/releases" target="_blank"><i class="material-icons">file_download</i></a>
-		</div>
 	</header>
-	<section class="main c-pad-h40 c-pad-v20">
+	<section class="main pad-h3 pad-v3">
 		<div class="content-pane" id="ContentPane" runat="server" />
