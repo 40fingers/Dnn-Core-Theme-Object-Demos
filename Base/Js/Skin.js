@@ -32,16 +32,13 @@
 	}
 	
 	function toggleMenu(){
+		var wrapperSelector = '.wrap-main'
 		var cssClass = "menu-open"
 		
-		if ($(".demo").hasClass(cssClass)){
-			$(".demo").animate({"margin-Left": "0"})
-			$(".demo").removeClass(cssClass)
-			$(".content-main").animate({"margin-Left": "300px"})
+		if ($(wrapperSelector).hasClass(cssClass)){
+			$(wrapperSelector).removeClass(cssClass)
 		}else{
-			$(".demo").animate({"margin-Left": "-260px"})
-			$(".demo").addClass(cssClass)
-			$(".content-main").animate({"margin-Left": "40px"})
+			$(wrapperSelector).addClass(cssClass)
 		}
 
 
