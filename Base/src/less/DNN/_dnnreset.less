@@ -1,0 +1,168 @@
+/* DNN7 > Reset */
+.dnnCPHeader li{line-height:normal;}
+#dnnCPWrap .dnnCPHNav, #dnnCPWrap .dnnCPHMode{height:30px;}
+#RibbonBar_adminMenus > ul > li > a, #dnn_cp_RibbonBar_adminMenus > ul > li > a {padding: 10px 16px;}
+.dnnCPHMessage{line-height:35px;}
+#RibbonBar_adminMenus .dnnadminmega .megaborder, #dnn_cp_RibbonBar_adminMenus .dnnadminmega .megaborder {top: 35px;}
+
+a{
+	&.dnnPrimaryAction{
+	
+		&:link, &:visited{
+			color: @btnPrimaryCol;
+		}
+
+	}
+	
+	&.dnnSecondaryAction{
+	
+		&:link, &:visited{
+			color: @btnSecondaryCol;
+		}
+
+	}
+
+}
+
+@import '_login.less';
+
+
+body{letter-spacing:normal; line-height:normal;}
+h1, h2, h3, h4, h5, h6, li, ul, 
+.Normal, .NormalRed, .NormalBold, .NormalDisabled,
+th,td,table,
+h1,h2,h3,h4,h5,h6,
+li,ul, li p,
+.blockquote, .blockquote p, 
+.Normal, .NormalBold, .NormalDisabled, .NormalDeleted,
+.Head, .SubHead, .SubSubHead, 
+a:link, a:visited, input, .CommandButton{
+color:inherit; font-family:inherit; letter-spacing:inherit; line-height:inherit; font-size:inherit;
+}
+
+// a[name]{vivibility:none;} // Blocks anchorlinks
+
+
+
+ul, ol {
+
+    margin-bottom: 1em;
+    margin-left: 1em;
+	}
+
+/* DNN7 Control panel */
+body > form #ControlBar_ControlPanel {z-index: 100001 !important;}
+body > form > .rcbSlide {z-index: 100010 !important;}
+
+/* DNN7 > Show Panes in Edit mode */
+.DNNEmptyPane{
+
+	display: block; 
+	width:auto; 
+	height:0;
+	
+	.CP-Edit &{
+		display: block; 
+		min-height:100px;
+	}
+}
+
+
+.paneOutline, .dnnDropEmptyPanes{border:0 none;}
+
+/* DNN Admin for DNN 8, partly DNN 9 */
+#dnnCPWrap, #dnnCPWrap *, #dnnCPWrap:before, #dnnCPWrap:after,
+.dnnActionMenu, .dnnActionMenu:before, .dnnActionMenu:after, .dnnActionMenu *,
+.ui-dialog, .ui-dialog:before, .ui-dialog:after, .ui-dialog *,
+#RibbonBar_ControlPanel, #RibbonBar_ControlPanel:before, #RibbonBar_ControlPanel:after, #RibbonBar_ControlPanel *, #RibbonBar_ControlPanel *:before, #RibbonBar_ControlPanel *:after, /* DNN6 CP */
+#ControlBar_ControlPanel, #ControlBar_ControlPanel:before, #ControlBar_ControlPanel:after, #ControlBar_ControlPanel *, #ControlBar_ControlPanel *:before, #ControlBar_ControlPanel *:after, /* DNN7 CP */
+.actionMenu, .actionMenu:before, .actionMenu:after, .actionMenu *, .actionMenu *:before, .actionMenu *:after,
+.dnnFormItem, .dnnFormItem:after, .dnnFormItem:before, .dnnFormItem *, .dnnFormItem *:after, .dnnFormItem *:before,
+.ui-widget, .ui-widget *, .ui-widget *:before, .ui-widget *:after,
+.dnnModalCtrl, .dnnModalCtrl *
+{
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}
+
+/* Pop-up close button */
+.dnnFormPopup .dnnModalCtrl{
+
+	.ui-dialog-titlebar-close{
+		padding:0;
+		
+	}
+
+} 
+
+
+/* For Evoq & DNN 9*/
+html .dnnModuleManager {padding: 0 !important;}
+html .actionMenu{display:block !important; opacity:1 !important;}
+html .actionMenu > ul {background:#eee;}
+html .actionMenu .dnn_mact{min-width:66px;}
+
+//DNN 7
+.DNN07{
+	form .actionMenu ul{
+		&, &:hover{
+			z-index:100000 !important;
+		} 
+	}
+}
+
+// DNN 9
+.DNN09{
+	div.actionMenu ul{
+		&, &:hover{
+			z-index:100000 !important;
+		} 
+	}
+}
+
+div.actionMenu ul.showhover
+{z-index:1040 !important;}
+
+html .scrolled form .actionMenu ul{z-index:auto !important;}
+
+html .actionMenu .dnn_mact > li {margin-right: 0 !important;}
+html .actionMenu .dnn_mact > li:not(:last-child) {line-height:0;}
+
+html .actionMenu .dnn_mact > li.dnn_shared,
+html .actionMenu .dnn_mact > li.dnn_menu_label{float:right; font-size:0.7em; opacity:0.8;}
+
+
+
+/* Fix for Bootstrap */
+.mark{background:transparent;}
+.navbar-fixed-bottom, .navbar-fixed-top {
+	z-index: 1000;
+}
+
+.scrolled .navbar-fixed-bottom, .scrolled .navbar-fixed-top {
+	z-index: 1030;
+}
+
+/* Fix for open content editor in source mode (issue in default.css)*/
+
+.dnnFormItem textarea{
+max-width:100%;
+}
+
+
+/* Installer issue */
+.dnnInstallExtension {
+	 .dnnInputFileWrapper{margin-bottom:1em;}
+	 .dnnBoxLabel{padding-right:0.5em;}
+}
+
+/* Panes */
+
+
+/* Remove height for panes without any content */
+.CP-None, .CP-View {
+	.row.Empty{display:none;}
+}
+
+input, textarea{border-radius:0; box-shadow:none;} /* For Safari mobile */
