@@ -1,7 +1,6 @@
 <%@ Register TagPrefix="dnn" TagName="LOGIN" Src="~/Admin/Skins/Login.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="MENU" src="~/DesktopModules/DDRMenu/Menu.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="USER" Src="~/Admin/Skins/User.ascx" %>
-<%@ Register TagPrefix="dnn" TagName="LANGUAGE" Src="~/Admin/Skins/Language.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="jQuery" src="~/Admin/Skins/jQuery.ascx" %>
 <%@ Register TagPrefix="fortyfingers" TagName="SH" Src="~/DesktopModules/40Fingers/SkinObjects/StyleHelper/StyleHelper.ascx" %> 
 
@@ -74,6 +73,8 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
+<!-- #include file="../custom/_skin-variables.ascx" -->
+
 <main class="wrap-main menu-open <%=IsLocalSite%>" id="skin">
 	<aside class="side-wrapper">
 		<div class="menu-header">
@@ -83,9 +84,6 @@
 			<a class="togglemenu icon40" id="togglemenu" onclick="toggleMenu()" title="Toggle Sidebar">
 				<i class="material-icons">menu</i>
 			</a>
-			<div class="lang-wrap float-right clear-after">
-				<dnn:LANGUAGE runat="server" id="dnnLANGUAGE" showMenu="False" showLinks="True" />
-			</div>
 		</div>
 		
 		<!-- Side Menu -->
