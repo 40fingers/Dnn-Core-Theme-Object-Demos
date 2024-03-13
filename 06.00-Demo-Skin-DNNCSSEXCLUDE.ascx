@@ -13,11 +13,11 @@
 <div class="side-pane c24-12" id="SidePane" runat="server" />
 <div class="demo-content c24-12">
 <h3>Skin Object Examples</h3>
-<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %><div class='item'>
-<h3>Load Blue Style Sheet</h3>
+<%@ Register TagPrefix="dnn" TagName="CssExclude" src="~/Admin/Skins/DnnCssExclude.ascx" %><div class='item'>
+<h3>Don't load Default.css</h3>
 <div class='intro'></div>
-<code>&lt;dnn:DnnCssInclude runat=&quot;server&quot; FilePath=&quot;custom/css/blue.css&quot; PathNameAlias=&quot;SkinPath&quot; /&gt;</code>
-<div class='example'><dnn:DnnCssInclude runat="server" FilePath="custom/css/blue.css" PathNameAlias="SkinPath" /></div>
+<code>&lt;dnn:CssExclude runat=&quot;server&quot; name=&quot;DnnDefault&quot; /&gt;</code>
+<div class='example'><dnn:CssExclude runat="server" name="DnnDefault" /></div>
 </div>
 
 </div>

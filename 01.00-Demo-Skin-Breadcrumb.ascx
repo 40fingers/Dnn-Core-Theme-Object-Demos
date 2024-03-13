@@ -1,8 +1,7 @@
 <%@ Control Language="vb" CodeBehind="~/admin/Skins/skin.vb" AutoEventWireup="false"
     Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
 
-<!-- #include file="custom/_skin-variables.ascx" -->
-<!-- #include file="Base/Header.ascx" -->
+<!-- #include file="Base/Base.ascx" -->
 
 		
 	<!-- 40FINGERS DNN Demo Skin 
@@ -21,10 +20,16 @@
 <div class='example'><dnn:Breadcrumb runat="server" id="SKO1"  /></div>
 </div>
 <div class='item'>
+<h3>Separator</h3>
+<div class='intro'></div>
+<code>&lt;dnn:Breadcrumb id=&quot;dnnBreadcrumb&quot; Separator=&quot; &gt; &quot; runat=&quot;server&quot;   /&gt;</code>
+<div class='example'><dnn:Breadcrumb id="SKO2" Separator=" > " runat="server"   /></div>
+</div>
+<div class='item'>
 <h3>Options</h3>
 <div class='intro'></div>
 <code>&lt;dnn:Breadcrumb id=&quot;dnnBreadcrumb&quot; Separator=&quot;&gt;&quot; CssClass=&quot;breadcrumb&quot; RootLevel=&quot;1&quot; UseTitle=&quot;true&quot;  runat=&quot;server&quot;   /&gt;</code>
-<div class='example'><dnn:Breadcrumb id="SKO2" Separator=">" CssClass="breadcrumb" RootLevel="1" UseTitle="true"  runat="server"   /></div>
+<div class='example'><dnn:Breadcrumb id="SKO3" Separator=">" CssClass="breadcrumb" RootLevel="1" UseTitle="true"  runat="server"   /></div>
 </div>
 
 </div>
