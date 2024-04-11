@@ -1,8 +1,7 @@
 <%@ Control Language="vb" CodeBehind="~/admin/Skins/skin.vb" AutoEventWireup="false"
     Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
 
-<!-- #include file="custom/_skin-variables.ascx" -->
-<!-- #include file="Base/Header.ascx" -->
+<!-- #include file="Base/Base.ascx" -->
 
 		
 	<!-- 40FINGERS DNN Demo Skin 

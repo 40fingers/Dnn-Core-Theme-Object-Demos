@@ -1,0 +1,52 @@
+/* Set to flexbox */
+.language-ul-flags{
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.language-ul-flags .lang-item{
+    padding: 0; margin: 0; list-style-type:none;
+    order: 1;
+    display:flex;
+    align-items: center;
+
+}
+
+.language-ul-flags .lang-item .lang-link{
+    display:inline-block;
+    line-height: 1em;
+}
+/* push selected to top */
+.language-ul-flags .lang-item-sel-True{
+
+    order: 0;
+
+}
+
+.language-ul-flags .lang-item-sel-True .lang-menu-toggle::after{
+
+    --lang-toggle-padding: 1.4em;
+
+    content: "+";
+    display:inline-block;
+    background: #ddd;
+    line-height: var(--lang-toggle-padding);
+    width: var(--lang-toggle-padding);
+    text-align:center;
+    border-radius: 50%;
+}
+
+/* Hide and toggel other flags */
+.language-ul-flags .lang-item{
+    display: none;
+}
+
+.language-ul-flags .lang-item-sel-True{
+    display: inline-block;
+}
+.lang-list-opened .lang-item{
+    display: inline-block;
+}
