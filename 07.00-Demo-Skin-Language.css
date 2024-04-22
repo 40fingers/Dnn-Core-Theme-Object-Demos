@@ -1,10 +1,11 @@
-/* Set to flexbox */
+/* UL Demo: Set to flexbox */
 .language-ul-flags{
 
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+	cursor: pointer;
 }
 
 .language-ul-flags .lang-item{
