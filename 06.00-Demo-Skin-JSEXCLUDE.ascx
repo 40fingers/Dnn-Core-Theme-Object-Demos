@@ -13,13 +13,11 @@
 <div class="side-pane c24-12" id="SidePane" runat="server" />
 <div class="demo-content c24-12">
 <h3>Skin Object Examples</h3>
-<%@ Register TagPrefix="dnn" TagName="TEXT" src="~/Admin/Skins/Text.ascx" %>
-<div class='item'>
-<div class='example'>
-Text: 
-<dnn:TEXT ShowText="Example Text Default" CssClass="example-text" ResourceKey="Example" id="dnnTEXT" runat="server" />
-
-</div>
+<%@ Register TagPrefix="dnn" TagName="JsExclude" src="~/Admin/Skins/DnnJsExclude.ascx" %><div class='item'>
+<h3>Don't load DNN.js</h3>
+<div class='intro'></div>
+<code>&lt;dnn:JsExclude runat=&quot;server&quot; name=&quot;DnnDefault&quot; /&gt;</code>
+<div class='example'><dnn:JsExclude runat="server" name="DnnDefault" /></div>
 </div>
 
 </div>
