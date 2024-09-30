@@ -13,7 +13,13 @@
 <div class="side-pane c24-12" id="SidePane" runat="server" />
 <div class="demo-content c24-12">
 <h3>Skin Object Examples</h3>
-[PLACEHOLDER]
+<%@ Register TagPrefix="dnn" TagName="Help" Src="~/Admin/Skins/Help.ascx" %><div class='item'>
+<h3>Default</h3>
+<div class='intro'></div>
+<code>&lt;dnn:Help runat=&quot;server&quot; id=&quot;dnnHelp&quot; /&gt;</code>
+<div class='example'><dnn:Help runat="server" id="SKO1" /></div>
+</div>
+
 </div>
 </div>
 
