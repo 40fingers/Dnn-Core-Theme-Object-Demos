@@ -1,0 +1,10 @@
+/* Menu item numbering */
+
+.demo-menu li.Level1{
+    counter-increment: menu-item;
+}
+
+.demo-menu li.Level1 > a:before{
+    
+    content: counters(menu-item, ".", decimal-leading-zero) " ";
+}
