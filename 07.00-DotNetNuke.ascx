@@ -16,8 +16,8 @@
 <%@ Register TagPrefix="dnn" TagName="DotNetNuke " Src="~/Admin/Skins/dotnetnuke.ascx" %><div class='item'>
 <h3>Default</h3>
 <div class='intro'></div>
-<code>&lt;dnn:DotNetNuke runat=&quot;server&quot; id=&quot;dnnDotnetNuke&quot;&gt;</code>
-<div class='example'><dnn:DotNetNuke runat="server" id="SKO0"></div>
+<code>&lt;dnn:DotNetNuke runat=&quot;server&quot; id=&quot;dnnDotnetNuke&quot; /&gt;</code>
+<div class='example'><dnn:DotNetNuke runat="server" id="SKO1" /></div>
 </div>
 
 </div>
