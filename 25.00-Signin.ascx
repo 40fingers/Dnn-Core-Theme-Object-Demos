@@ -13,7 +13,14 @@
 <div class="side-pane c24-12" id="SidePane" runat="server" />
 <div class="demo-content c24-12">
 <h3>Skin Object Examples</h3>
-[PLACEHOLDER]
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.UI.Skins.Controls" Assembly="DotNetNuke" %><div class='item'>
+<h3>Default</h3>
+<div class='intro'><p>Default implementation.</p>
+</div>
+<code>&lt;dnn:SIGNIN ID=&quot;dnnSignIn&quot; runat=&quot;server&quot; /&gt;</code>
+<div class='example'><dnn:SIGNIN ID="dnnSignIn" runat="server" /></div>
+</div>
+
 </div>
 </div>
 
