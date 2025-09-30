@@ -13,7 +13,19 @@
 <div class="side-pane c24-12" id="SidePane" runat="server" />
 <div class="demo-content c24-12">
 <h3>Skin Object Examples</h3>
-[PLACEHOLDER]
+<div class='item'>
+<h3>Default</h3>
+<div class='intro'></div>
+<code>&lt;dnn:User runat=&quot;server&quot; id=&quot;dnnUser&quot; /&gt;</code>
+<div class='example'><dnn:User runat="server" id="SKO1" /></div>
+</div>
+<div class='item'>
+<h3>Legacy Mode False</h3>
+<div class='intro'></div>
+<code>&lt;dnn:USER ID=&quot;dnnUser&quot; CssClass=&quot;user-link&quot; runat=&quot;server&quot; LegacyMode=&quot;false&quot; /&gt;</code>
+<div class='example'><dnn:USER ID="dnnUser" CssClass="user-link" runat="server" LegacyMode="false" /></div>
+</div>
+
 </div>
 </div>
 

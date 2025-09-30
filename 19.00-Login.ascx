@@ -13,7 +13,19 @@
 <div class="side-pane c24-12" id="SidePane" runat="server" />
 <div class="demo-content c24-12">
 <h3>Skin Object Examples</h3>
-[PLACEHOLDER]
+<div class='item'>
+<h3>Default</h3>
+<div class='intro'></div>
+<code>&lt;dnn:Login runat=&quot;server&quot; id=&quot;dnnLogin&quot; /&gt;</code>
+<div class='example'><dnn:Login runat="server" id="SKO1" /></div>
+</div>
+<div class='item'>
+<h3>Text and CSS Class</h3>
+<div class='intro'></div>
+<code>&lt;dnn:Login runat=&quot;server&quot; Text=&quot;Knock knock&quot; LogoffText=&quot;Let me out!&quot; CssClass=&quot;my-login&quot; id=&quot;dnnLogin&quot; /&gt;</code>
+<div class='example'><dnn:Login runat="server" Text="Knock knock" LogoffText="Let me out!" CssClass="my-login" id="SKO2" /></div>
+</div>
+
 </div>
 </div>
 

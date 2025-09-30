@@ -13,7 +13,19 @@
 <div class="side-pane c24-12" id="SidePane" runat="server" />
 <div class="demo-content c24-12">
 <h3>Skin Object Examples</h3>
-[PLACEHOLDER]
+<%@ Register TagPrefix="dnn" TagName="Privacy" Src="~/Admin/Skins/Privacy.ascx" %><div class='item'>
+<h3>Default</h3>
+<div class='intro'></div>
+<code>&lt;dnn:Privacy runat=&quot;server&quot; id=&quot;dnnPrivacy&quot; /&gt;</code>
+<div class='example'><dnn:Privacy runat="server" id="SKO1" /></div>
+</div>
+<div class='item'>
+<h3>Set Text</h3>
+<div class='intro'></div>
+<code>&lt;dnn:Privacy runat=&quot;server&quot; Text=&quot;We care about your Privacy&quot; id=&quot;dnnPrivacy&quot; /&gt;</code>
+<div class='example'><dnn:Privacy runat="server" Text="We care about your Privacy" id="SKO2" /></div>
+</div>
+
 </div>
 </div>
 
